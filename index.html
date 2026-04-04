@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Age Calculator | Pro Developing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="blob-1"></div>
+    <div class="blob-2"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">
+            <span class="p-blue">SK</span><span class="d-orange"></span>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <div class="glass-card">
+            <div class="card-header">
+                <i class="fas fa-calendar-check header-icon"></i>
+                <h1>Age Calculator</h1>
+                <p>Calculate your exact age in years, months, and days</p>
+            </div>
+
+            <div class="input-grid">
+                <div class="input-group">
+                    <label>Day</label>
+                    <select id="day"><option value="">DD</option></select>
+                </div>
+                <div class="input-group">
+                    <label>Month</label>
+                    <select id="month"><option value="">MM</option></select>
+                </div>
+                <div class="input-group">
+                    <label>Year</label>
+                    <input type="number" id="year" placeholder="YYYY" >
+                </div>
+            </div>
+
+            <button onclick="calculateAge()" class="main-btn">
+                <span>Calculate Age</span>
+                <i class="fas fa-calculator"></i>
+            </button>
+
+            <div id="loader" class="loader hidden">
+                <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            </div>
+
+            <div id="resultBox" class="result-display hidden">
+                <div class="result-item">
+                    <span id="resYears">0</span>
+                    <label>Years</label>
+                </div>
+                <div class="result-divider"></div>
+                <div class="result-item">
+                    <span id="resMonths">0</span>
+                    <label>Months</label>
+                </div>
+                <div class="result-divider"></div>
+                <div class="result-item">
+                    <span id="resDays">0</span>
+                    <label>Days</label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Design by <span class="footer-brand">kiran suthar</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
